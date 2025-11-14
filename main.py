@@ -9,6 +9,10 @@ import re
 import uuid
 from contextlib import asynccontextmanager
 
+from dotenv import load_dotenv 
+load_dotenv()
+print(".env variables loaded.")
+
 # SQLlite DB init
 DB_URL = "sqlite:///./multi_agent_data.db"
 APP_NAME = "CustomerInquiryProcessor"
