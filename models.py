@@ -8,3 +8,4 @@ class CustomerInquiryResponse(BaseModel):
     original_inquiry: str
     category: str
     suggested_response: str
+    metrics_info: str

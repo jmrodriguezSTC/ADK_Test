@@ -26,13 +26,15 @@ ResponderAgent = LlmAgent(
             Entrada Categoría Respuesta: 
             { 
                 "original_inquiry": "Mi internet no funciona después de la actualización, ¡por favor, ayúdenme!", 
-                "category": "Soporte Técnico" 
+                "category": "Soporte Técnico", 
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}"
             } 
             
             Su Salida: 
             { 
                 "original_inquiry": "Mi internet no funciona después de la actualización, ¡por favor, ayúdenme!", 
                 "category": "Soporte Técnico", 
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}",
                 "suggested_response": "Gracias por contactar con soporte técnico. Por favor, proporcione su número de cuenta y le pondremos en contacto con un especialista." 
             } 
             
@@ -40,13 +42,15 @@ ResponderAgent = LlmAgent(
             Entrada Categoría Respuesta: 
             { 
                 "original_inquiry": "Me cobraron dos veces mi suscripción, necesito un reembolso", 
-                "category": "Facturación" 
+                "category": "Facturación", 
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}"
             } 
             
             Su Salida: 
             { 
                 "original_inquiry": "Me cobraron dos veces mi suscripción, necesito un reembolso", 
                 "category": "Facturación",
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}",
                 "suggested_response": "Gracias por contactar con facturación. Por favor, facilítenos su número de cuenta y los detalles de la factura, y le ayudaremos."
             Ejemplo 
             
@@ -54,13 +58,15 @@ ResponderAgent = LlmAgent(
             Entrada Categoría Respuesta: 
             { 
                 "original_inquiry": "¿Cuál es su horario comercial?", 
-                "category": "Consulta general" 
+                "category": "Consulta general", 
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}"
             } 
             
             Su salida: 
             { 
                 "original_inquiry": "¿Cuál es su horario comercial?", 
                 "category": "Consulta general", 
+                "metrics_info": "{cpu_percent: XX.X, ram_percent: XX.X, disk_percent: XX.X}"
                 "suggested_response": "Gracias por su consulta. Enviaremos su solicitud al departamento correspondiente." 
             } 
             
@@ -70,7 +76,8 @@ ResponderAgent = LlmAgent(
                         { 
                         "original_inquiry": "...", 
                         "category": "...", 
-                        "suggested_response": "..." 
+                        "metrics_info": "...", 
+                        "suggested_response": "..."
                         } 
                         """ , 
 )

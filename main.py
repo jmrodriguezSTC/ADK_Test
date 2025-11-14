@@ -138,7 +138,8 @@ async def process_customer_inquiry(
         return CustomerInquiryResponse(
             original_inquiry=response_data.get("original_inquiry", ""),
             category=response_data.get("category", ""),
-            suggested_response=response_data.get("suggested_response", "")
+            suggested_response=response_data.get("suggested_response", ""),
+            metrics_info=response_data.get("metrics_info", "")
         )
 
     except Exception as e:

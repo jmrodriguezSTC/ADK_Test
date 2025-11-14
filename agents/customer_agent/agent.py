@@ -9,3 +9,9 @@ class CustomerAgentOrchestrator:
             sub_agents=[CategorizerAgent, ResponderAgent ],
             description="A pipeline that processes customer inquiries by categorizing them and generating appropriate pre-defined responses",
         )
+
+# root_agent = SequentialAgent(
+#             name='CustomerInquiryProcessorPipeline',
+#             sub_agents=[CategorizerAgent, ResponderAgent ],
+#             description="A pipeline that processes customer inquiries by categorizing them and generating appropriate pre-defined responses",
+#         )
